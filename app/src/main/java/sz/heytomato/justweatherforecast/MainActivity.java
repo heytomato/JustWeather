@@ -120,7 +120,7 @@ public class MainActivity extends AppCompatActivity implements ViewPager.OnPageC
         weatherManager.initWithKeyAndUserId("kjhcscay7iilh3qf","U5AF3E16E8");
 
 
-        weatherManager.getWeatherNow(new TPCity("guangzhou"), TPWeatherManager.TPWeatherReportLanguage.kSimplifiedChinese
+        weatherManager.getWeatherNow(new TPCity("广州"), TPWeatherManager.TPWeatherReportLanguage.kSimplifiedChinese
                 , TPWeatherManager.TPTemperatureUnit.kCelsius
                 , new TPListeners.TPWeatherNowListener() {
                     @Override
@@ -131,6 +131,13 @@ public class MainActivity extends AppCompatActivity implements ViewPager.OnPageC
 //                            cityNameText.setText();
                             weatherDespText.setText(tpWeatherNow.text);
                             temp.setText(String.valueOf(tpWeatherNow.temperature)+"℃");
+                            String d=String .valueOf(tpWeatherNow.lastUpdateDate);
+                            String[] m=d.split(" ");
+                            String[] t=m[3].split(":");
+                            publishText.setText("发布于"+m[2]+"日"+t[0]+":"+t[1]);
+
+
+                            Log.d("x","发布于"+m[2]+"日"+t[0]+":"+t[1]);
                             Log.d("x", String.valueOf(tpWeatherNow.lastUpdateDate));
                             Log.d("x",tpWeatherNow.text);
                             Log.d("x",tpWeatherNow.code);
