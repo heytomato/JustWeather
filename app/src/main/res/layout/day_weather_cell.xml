@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="80dp">
+
+    <TextView
+        android:id="@+id/daily_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="day"
+        android:layout_weight="1"
+        android:textSize="17sp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        />
+
+    <TextView
+        android:id="@+id/daily_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="天气"
+        android:layout_weight="1"
+        android:textSize="17sp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="3"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        >
+
+        <TextView
+            android:id="@+id/daily_low_temp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="- -"
+            android:layout_gravity="center"
+            android:textSize="25sp"/>
+        <TextView
+            android:id="@+id/daily_high_temp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="- -"
+            android:layout_gravity="center"
+            android:textSize="25sp"/>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/daily_picture"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_gravity="center"
+        android:layout_marginRight="10dp"/>
+
+</LinearLayout>
