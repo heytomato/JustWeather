@@ -28,12 +28,14 @@
             android:textColor="#FFF"
             android:textSize="20sp"
             android:clickable="true"
+            android:src="@drawable/refresh"
+            android:background="@drawable/refresh_bg"
             />
 
-        <View
+        <!--<View
             android:layout_width="match_parent"
             android:layout_height="1px"
             android:background="#FFF"
-            android:layout_alignParentBottom="true"/>
+            android:layout_alignParentBottom="true"/>-->
 
 </RelativeLayout>
